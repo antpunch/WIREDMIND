@@ -1,15 +1,17 @@
 ﻿# The script of the game goes in this file.
 
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
-
-define mc = Character("[mcname]", color="#FCC1DF")
-define mcanon = Character("???", color="#FCC1DF")
-define patient = Character("Patient")
-define koa = Character("Koa")
+# characters
+define mc = Character("[mcname]", color="#EC9594")
+define mcanon = Character("???", color="#EC9594")
+define koa = Character("Koa", color="#A12323")
 define koaanon = Character("???", color="#A12323")
-define cato = Character ("Cato")
+define cato = Character("Cato", color="#3F8C19")
+define catoanon = Character("???", color="#3F8C19")
+define patient = Character("Patient", color="#051a55")
+define soldier = Character("Fighter", color="#051a55")
 
+# choice stuff
+default ask = False
 
 # The game starts here.
 
@@ -23,7 +25,7 @@ label start:
     scene hallway with dissolve
     centered "Your memories,"
     centered "They aren't the same."
-    scene lab with dissolve
+    scene bedroom with dissolve
     centered "The virus invades your mind in a way that you can't even understand."
     centered "You can {i}feel{/i} the disconnect of flesh and metal."
     scene black with dissolve
@@ -109,6 +111,7 @@ label start:
     mc "?!"
 
     scene koa cg
+    $ renpy.pause(2.0)
 
     koaanon "Emergency control expedition!"
     koaanon "All citizens stay clear!"
@@ -131,6 +134,7 @@ label start:
         mc "(I doubt it would be all that bothersome and I could get good information by just asking...)"
 
         "Ask about what happened":
+            $ ask = True
             jump ask
 
         "Stay out of the way":
@@ -141,9 +145,75 @@ label ask:
 
     mc "(Nothing ventured, nothing gained.)"
 
-    koaanon "Go away bruh."
+    #walking sound effect
 
-    mc "Damn okay."
+    mc "Um, excuse me."
+
+    koaanon "?"
+
+    mc "I'm awfully sorry to intrude, but I was curious as to what this expedition was about."
+
+    koaanon "With all due respect, ma'am, this expedition is none of your business."
+
+    mc "I don't know if this will change anything, but here's my badge. I'm an intern at the research center and-"
+
+    koaanon "If you work at the research center, they'll tell you what you need to know and won't tell you what you don't need to know."
+
+    mc "..."
+
+    koaanon "..."
+
+    koaanon "Look, this expedition is highly classified and there's nothing that I can tell any citizen directly."
+
+    koaanon "But if you were to ask me...off the record, I'd say that something weird is going on with the virus..."
+
+    koaanon "It's just a feeling though. No need to take it seriously."
+
+    #scribbling sounds
+
+    mc "No...need to take...it..."
+
+    koaanon "H-hey! No, seriously! Why are you writing that down..."
+
+    mc "Ah, sorry. This isn't for a report or anything, I swear! They're just my personal notes."
+
+    mc "I've felt that something might be off about the virus for a while too. Knowing that others feel the same way helps me feel like I'm not just overthinking it."
+
+    koaanon "Hm."
+
+    koaanon "What else do you have in there?"
+
+    mc "Hey, no peeking!"
+
+    mc "(Aside from my interview notes with our patients, my journal holds a lot of my personal thoughts on the virus as well.)"
+
+    mc "(Definitely not something I'd want just anyone to see. Certainly not something I would want to show to a government employee.)"
+
+    mc "(You never know who might report what to higher ups.)"
+
+    koaanon "What, got plans to overthrow the patrol order in there?"
+
+    mc "I just have my reasons, alright. My research is important to me."
+
+    koaanon "Hmm...fine, I won't push."
+
+    koaanon "If you keep your notes that confidential, I'm sure that my off the record comment will be the same, right?"
+
+    mc "Of course. Like I said, just personal notes."
+
+    koaanon "If you have any thoughts on the virus, I-"
+
+    soldier "KOA! Get over here and help me pack up this gear."
+
+    koaanon "I'll be right over!"
+
+    koaanon "If you have any thoughts on the virus, I'd be curious to know about them. Off the record."
+
+    mc "..."
+
+    mc "(Ah, a crowd's starting to gather around.)"
+
+    mc "(I guess it makes sense that everyone else would be curious too.)"
 
     jump main
 
@@ -157,6 +227,16 @@ label quiet:
 
 
 label main:
-    "blah blah blah i'll write this out tmrw"
+
+    mc "(I should get back to the research center before it gets dark.)"
+
+    
+
+
+
+if ask:
+    koa "i saw u earlier lols"
+
+    mc "o shit u right bro"
 
     return

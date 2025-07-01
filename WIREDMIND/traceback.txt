@@ -1,32 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 75, in script
-    centered "The cold crawl of metal," with sshake
-  File "game/script.rpy", line 75, in <module>
-    centered "The cold crawl of metal," with sshake
-NameError: name 'sshake' is not defined
+  File "game/script.rpy", line 203, in script
+    anon "KOA! Get over here and help me pack up this gear."
+Exception: Sayer 'anon' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 75, in script
-    centered "The cold crawl of metal," with sshake
+  File "game/script.rpy", line 203, in script
+    anon "KOA! Get over here and help me pack up this gear."
   File "/Users/noelkim/Downloads/renpy-8.3.4-sdk/renpy/ast.py", line 2579, in execute
     Say.execute(self)
-  File "/Users/noelkim/Downloads/renpy-8.3.4-sdk/renpy/ast.py", line 620, in execute
-    say_menu_with(self.with_, renpy.game.interface.set_transition)
-  File "/Users/noelkim/Downloads/renpy-8.3.4-sdk/renpy/ast.py", line 435, in say_menu_with
-    what = renpy.python.py_eval(expression)
-  File "/Users/noelkim/Downloads/renpy-8.3.4-sdk/renpy/python.py", line 1209, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "/Users/noelkim/Downloads/renpy-8.3.4-sdk/renpy/python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 75, in <module>
-    centered "The cold crawl of metal," with sshake
-NameError: name 'sshake' is not defined
+  File "/Users/noelkim/Downloads/renpy-8.3.4-sdk/renpy/ast.py", line 581, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "/Users/noelkim/Downloads/renpy-8.3.4-sdk/renpy/ast.py", line 470, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'anon' is not defined.
 
 macOS-10.16-x86_64-i386-64bit x86_64
 Ren'Py 8.3.4.24120703
 WIREDMIND 1.0
-Mon Jun 30 01:07:55 2025
+Mon Jun 30 20:45:46 2025
