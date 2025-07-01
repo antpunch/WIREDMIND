@@ -2,9 +2,177 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 147: expected statement.
-    Shake(None, 1.0, dist=15)
-                             ^
+File "game/script.rpy", line 54: end of line expected.
+    show mc sad with dissolve at portrait
+                              ^
+
+File "game/script.rpy", line 59: end of line expected.
+    show mc concentrated with dissolve at portrait
+                                       ^
+
+File "game/script.rpy", line 62: end of line expected.
+    show mc talking with dissolve at portrait
+                                  ^
+
+File "game/script.rpy", line 76: end of line expected.
+    show mc surprise with dissolve at portrait
+                                   ^
+
+File "game/script.rpy", line 91: end of line expected.
+    show mc talking with dissolve at portrait
+                                  ^
+
+File "game/script.rpy", line 96: end of line expected.
+    show mc neutral with dissolve at portrait
+                                  ^
+
+File "game/script.rpy", line 100: end of line expected.
+    show mc sad with dissolve at portrait
+                              ^
+
+File "game/script.rpy", line 105: end of line expected.
+    show mc concentrated with dissolve at portrait
+                                       ^
+
+File "game/script.rpy", line 124: end of line expected.
+    show mc surprise with dissolve at portrait
+                                   ^
+
+File "game/script.rpy", line 133: end of line expected.
+    show mc neutral with dissolve at portrait
+                                  ^
+
+File "game/script.rpy", line 136: end of line expected.
+    show mc concentrated with dissolve at portrait
+                                       ^
+
+File "game/script.rpy", line 143: end of line expected.
+    show mc concentrated with dissolve at portrait
+                                       ^
+
+File "game/script.rpy", line 146: end of line expected.
+    show mc happy with dissolve at portrait
+                                ^
+
+File "game/script.rpy", line 149: end of line expected.
+    show mc sweat with dissolve at portrait
+                                ^
+
+File "game/script.rpy", line 165: end of line expected.
+    show mc concentrated with dissolve at portrait
+                                       ^
+
+File "game/script.rpy", line 170: end of line expected.
+    show mc talking with dissolve at portrait
+                                  ^
+
+File "game/script.rpy", line 183: end of line expected.
+    show mc sad with dissolve at portrait
+                              ^
+
+File "game/script.rpy", line 189: end of line expected.
+    show mc concentrated with dissolve at portrait
+                                       ^
+
+File "game/script.rpy", line 198: end of line expected.
+    show mc surprise with dissolve at portrait
+                                   ^
+
+File "game/script.rpy", line 200: end of line expected.
+    show mc talking with dissolve at portrait
+                                  ^
+
+File "game/script.rpy", line 206: end of line expected.
+    show mc blush with dissolve at portrait
+                                ^
+
+File "game/script.rpy", line 214: end of line expected.
+    show mc angry with dissolve at portrait
+                                ^
+
+File "game/script.rpy", line 220: end of line expected.
+    show mc concentrated with dissolve at portrait   
+                                       ^
+
+File "game/script.rpy", line 230: end of line expected.
+    show mc neutral with dissolve at portait
+                                  ^
+
+File "game/script.rpy", line 234: end of line expected.
+    show mc surprise with dissolve at portrait
+                                   ^
+
+File "game/script.rpy", line 246: end of line expected.
+    show mc neutral with dissolve at portrait
+                                  ^
+
+File "game/script.rpy", line 259: end of line expected.
+    show mc sweat with dissolve at portrait
+                                ^
+
+File "game/script.rpy", line 263: end of line expected.
+    show mc concentrated with dissolve at portrait
+                                       ^
+
+File "game/script.rpy", line 274: end of line expected.
+    show mc surprise with dissolve at portrait
+                                   ^
+
+File "game/script.rpy", line 278: end of line expected.
+    show mc concentrated with dissolve at portrait
+                                       ^
+
+File "game/script.rpy", line 283: end of line expected.
+    show mc neutral with dissolve at portrait
+                                  ^
+
+File "game/script.rpy", line 285: end of line expected.
+    show mc concentrated with dissolve at portrait
+                                       ^
+
+File "game/script.rpy", line 290: end of line expected.
+    show mc sad with dissolve at portrait
+                              ^
+
+File "game/script.rpy", line 293: end of line expected.
+    show mc angry with dissolve at portrait
+                                ^
+
+File "game/script.rpy", line 299: end of line expected.
+    show mc blush with dissolve at portrait
+                                ^
+
+File "game/script.rpy", line 308: end of line expected.
+    show mc sweat with dissolve at portrait
+                                ^
+
+File "game/script.rpy", line 325: end of line expected.
+    show mc neutral with dissolve at portrait
+                                  ^
+
+File "game/script.rpy", line 328: end of line expected.
+    show mc sweat with dissolve at portrait
+                                ^
+
+File "game/script.rpy", line 334: end of line expected.
+    show mc talking with dissolve at portrait
+                                  ^
+
+File "game/script.rpy", line 349: end of line expected.
+    show mc sad with dissolve at portrait
+                              ^
+
+File "game/script.rpy", line 356: end of line expected.
+    show mc surprise with dissolve at portrait
+                                   ^
+
+File "game/script.rpy", line 358: end of line expected.
+    show mc sweat with dissolve at portrait
+                                ^
+
+File "game/script.rpy", line 364: end of line expected.
+    show mc neutral with dissolve at portrait
+                                  ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Mon Jun 30 00:59:53 2025
+Tue Jul  1 01:40:30 2025
