@@ -64,6 +64,8 @@ define config.has_voice = True
 
 # define config.main_menu_music = "main-menu-theme.ogg"
 
+## layering!
+define config.layers = [ 'master', 'transient', 'screens', 'character_over_text', 'overlay' ]
 
 ## Transitions #################################################################
 ##
