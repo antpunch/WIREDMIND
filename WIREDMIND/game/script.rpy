@@ -53,7 +53,7 @@ label start:
     patient "I'm one of the lucky ones, yet I'm here complaining to you."
     patient "I can't believe myself..."
 
-    show mc sad onlayer character_over_text at portrait
+    show mc sad onlayer character_over_text at portrait with dissolve
     mcanon "(This is always the hardest part. I wish there was something that I could do...)"
     mcanon "(The pain that these patients experience is something that I'll never be able to fully understand.)"
     mcanon "Please, don't think that way."
@@ -82,6 +82,7 @@ label start:
     patient "I feel badly about not knowing your name."
     patient "If you're going to be here every week having to listen to my complaining, the least I could do is get to know you a bit in return."
 
+    hide mc surprise onlayer character_over_text
     scene black
     centered "You can now input the name you want to use. Leaving it blank will allow you to use the default name."
 
@@ -251,9 +252,10 @@ label ask:
     show mc sweat onlayer character_over_text at portrait
     mc "(Shoot, I only have 15 minutes to get back to the research center!)"
 
+    hide mc surprise onlayer character_over_text
     scene black with dissolve
-    $ renpy.pause(2.0)
-    #SUBWAY NOISES
+    play sound "sound/subway.mp3"
+    $ renpy.pause(3.0)
 
     jump main
 
@@ -264,14 +266,17 @@ label quiet:
     mc "(I should stay out of their way...)"
     mc "(If it's meant to be public knowledge, I'll hear about it. If it's classified, I doubt they'd tell me anything even if I begged.)"
     mc "(I should get back to the research center and update the patient file.)"
+
+    hide mc surprise onlayer character_over_text
     scene black with dissolve
-    $ renpy.pause(2.0)
-    #SUBWAY NOISES
+    play sound "sound/subway.mp3"
+    $ renpy.pause(3.0)
 
     jump main
 
 
 label main:
+    stop sound
     scene hallway with dissolve
     show mc sweat onlayer character_over_text at portrait
     mc "*huff* *huff*"
@@ -284,14 +289,14 @@ label main:
     mc "(Whatever the problem was, it was handled quickly. But for it to have been handled {i}that{/i} quickly means that it was serious.)"
     #paper rustling sound
     $ renpy.pause (0.5)
-    #scribbling sound
+    play sound "sound/scribbling.wav"
     $ renpy.pause (0.5)
     mc "(Emergency control expedition...)"
     mc "(There weren't any newly announced cases.)"
     mc "(Which means...)"
     show mc surprise onlayer character_over_text at portrait
     mc "An information leak!"
-    #scribbling sound
+    play sound "sound/scribbling.wav"
     $ renpy.pause (0.5)
     show mc concentrated onlayer character_over_text at portrait
     mc "(The situation surrounding this virus just keeps getting more confusing.)"
@@ -302,7 +307,7 @@ label main:
         mc "(And it seems like that patrol order agent agrees.)"
         show mc concentrated onlayer character_over_text at portrait
         mc "(Koa, huh...)"
-        #scribbling sound
+        play sound "sound/scribbling.wav"
         $ renpy.pause (0.5)
         mc "(I wonder if working with him would help me clear up some of the questions I have.)"
         show mc sad onlayer character_over_text at portrait
@@ -316,10 +321,11 @@ label main:
 
     show mc blush onlayer character_over_text at portrait
     mc "!"
-    #door slide open sound
+    play sound "sound/door slide.mp3"
     
+    hide mc blush onlayer character_over_text
     scene cato cg with dissolve
-    $ renpy.pause(1.5)
+    $ renpy.pause(4.0)
 
     show mc blush onlayer character_over_text at portrait
     cato "You're late. About 45 seconds."
@@ -352,7 +358,7 @@ label main:
     mc "(He's never angry with me when I'm late, but he times me whenever I am...)"
     $ renpy.pause (0.5)
 
-    show cato halfbody neutral
+    show cato halfbody neutral with dissolve
 
     show mc talking onlayer character_over_text at portrait
     mc "Here you go."
@@ -376,6 +382,7 @@ label main:
 
     cato "I'm sure that you put them at much greater ease than I do."
     cato "..."
+    show cato halfbody talking
     cato "If it ever gets too hard, let me know and you can take a break."
 
     show mc surprise onlayer character_over_text at portrait
@@ -384,6 +391,7 @@ label main:
     mc "Plus, I need to be working a certain amount of hours to stay permanently hired."
 
     cato "Well, if you need the break, it's there. I'd still sign the papers."
+    show cato halfbody happy
     cato "What would they do? Fire me?"
 
     show mc neutral onlayer character_over_text at portrait
